@@ -174,13 +174,13 @@ if page == "Executive Overview":
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("Emails Processed", f"{metrics['emails_processed']:,}", "↑ 23%")
+        st.metric("Emails Processed", f"{int(metrics['emails_processed']):,}", "↑ 23%")
     with col2:
-        st.metric("Leads Qualified", f"{metrics['leads_qualified']:,}", "↑ 34%")
+        st.metric("Leads Qualified", f"{int(metrics['leads_qualified']):,}", "↑ 34%")
     with col3:
-        st.metric("Hours Saved/Month", f"{metrics['time_saved']}", "↑ 45%")
+        st.metric("Hours Saved/Month", f"{int(metrics['time_saved'])}", "↑ 45%")
     with col4:
-        st.metric("AI Accuracy", f"{metrics['accuracy_rate']}%", "↑ 2.1%")
+        st.metric("AI Accuracy", f"{int(metrics['accuracy_rate'])}%", "↑ 2.1%")
     
     st.markdown("---")
     
