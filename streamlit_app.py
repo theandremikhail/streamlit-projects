@@ -151,12 +151,12 @@ def create_simple_chart(data, chart_type="bar", title="Chart"):
 def generate_sample_metrics():
     """Generate sample metrics for demonstration"""
     return {
-        'emails_processed': "N/A",
-        'leads_qualified': "N/A",
-        'time_saved': "N/A",
-        'accuracy_rate': "N/A",
-        'documents_processed': "N/A",
-        'slack_interactions': "N/A"
+        'emails_processed': 0,
+        'leads_qualified': 0,
+        'time_saved': 0,
+        'accuracy_rate': 0,
+        'documents_processed': 0,
+        'slack_interactions': 0
     }
 
 # Main content based on selected page
@@ -445,11 +445,11 @@ elif page == "3. OCR + Slack AI Bot":
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Documents Processed", "N/A", "↑ N/A")
+        st.metric("Documents Processed", 0, "↑ 0")
     with col2:
-        st.metric("Avg Processing Time", "N/A", "↓ N/A")
+        st.metric("Avg Processing Time", 0, "↓ 0")
     with col3:
-        st.metric("Slack Interactions", "N/A", "↑ N/A")
+        st.metric("Slack Interactions", 0, "↑ 0")
 
 elif page == "4. AI Blog Writing Tool":
     st.title("AI Blog Writing Tool")
